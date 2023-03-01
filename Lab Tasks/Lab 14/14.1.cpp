@@ -1,0 +1,18 @@
+//Task # 1 Write a program that opens a file in write mode, write few sentences in the file and closes the file. 
+//(Note use comments to write down the steps for reading or writing a file such)
+//1) to open the file 
+//2) to read or write the data from/to the file 
+//3) to close the file
+
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main() {
+	ofstream MyFile("filename.txt");
+	
+	MyFile << "Files are Good Practice";
+	
+	MyFile.close();
+}
